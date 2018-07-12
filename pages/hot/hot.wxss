@@ -1,0 +1,71 @@
+/**index.wxss**/
+
+.movie_container {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  background: white;
+}
+
+.image_view {
+  width: 350rpx;
+}
+.avatar {
+  width: 350rpx;
+  height: 508rpx;
+} 
+
+.detail_container {
+  margin-left: 30rpx;
+  margin-top: 30rpx;
+}
+
+.title {
+  font-size: 40rpx;
+}
+
+.year {
+  font-size: 35rpx;
+  margin-left: 15rpx;
+  color: #3a3a3a;
+}
+
+.average_container {
+
+  margin-top: 20rpx;
+}
+.average_title {
+
+  font-size: 40rpx;
+}
+.average {
+  margin-left:  15rpx;
+  color: orange;
+  font-size: 30rpx;
+}
+
+.director_container {
+  margin-top: 20rpx;
+}
+
+.director_title {
+  font-size: 40rpx;
+}
+
+.director{
+  font-size: 35rpx;
+  margin-left:  15rpx;
+}
+
+.actor_container {
+  margin-top: 20rpx;
+}
+
+.actor_title {
+  font-size: 40rpx;
+}
+
+.actor{
+  font-size: 35rpx;
+  margin-left:  15rpx;
+}

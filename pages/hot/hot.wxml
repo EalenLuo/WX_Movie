@@ -1,0 +1,41 @@
+<!--index.wxml-->
+
+<view>
+
+  <view class='top'>
+    <swiper indicator-dots="{{indicatorDots}}" autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}" indicator-color='#3a3a3a' indicator-active-color='#268dcd'>
+      <block wx:for="{{imgUrls}}">
+        <swiper-item>
+          <image src="{{item}}" class="slide-image" width="355" height="150" />
+        </swiper-item>
+      </block>
+    </swiper>
+  </view>
+
+  <block wx:for="{{movies}}" wx:key="*this">
+    <view class='movie_container'>
+    <view class='image_view'>
+      <image class='avatar' src="{{item.images.large}}"></image>
+    </view>
+    <view class='detail_container'>
+      <view class='title_container'>
+        <text class='title'>{{item.original_title}}</text>
+        <text class='year'>{{item.year}}</text>
+      </view>
+      <view class='average_container'>
+        <text class='average_title'>评分</text>
+        <text class='average'>{{item.rating.average}}分</text>
+      </view>
+      <view class='director_container'>
+        <text class='director_title'>导演</text>
+        <text class='director'>{{item.directors[0].name}}</text>
+      </view>
+      <view class='actor_container'>
+        <text class='actor_title'>主演</text>
+        <text class='actor' wx:for="{{item.casts}}">{{item.name}}</text>
+      </view>
+    </view>
+  </view>
+  </block>
+
+</view>
